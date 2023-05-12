@@ -9,7 +9,7 @@
 
 	Don't be confused from other languages,
 	because there a [] is an array, whereas
-	a list as a specific definition.
+	a list has a specific definition.
 """
 
 #	create a list with n elements
