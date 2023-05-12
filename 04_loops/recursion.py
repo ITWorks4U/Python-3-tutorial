@@ -54,9 +54,28 @@ else:
 	print(" F(30) = ", retVal)
 #end if
 
-print("---	using a loop instead	---")
+print("---	using a loop in combination	---")
 
 #	print function can also be used with special formatting
 for i in range(a+1):
 	print("F(%d) = %d" % (i, fibonacci(i)))
 #end for
+
+print("---	using a loop instead	---")
+
+a = 30
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+# check if the number of terms is valid
+print("Fibonacci sequence:")
+while count < a:
+	print(n1)
+	nth = n1 + n2
+
+	# update values
+	n1 = n2
+	n2 = nth
+	count += 1
+#end while
