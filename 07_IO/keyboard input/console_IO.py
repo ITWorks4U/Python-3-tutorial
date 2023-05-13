@@ -30,7 +30,7 @@ print("-------------------")
 buffer = input("give me a number: ")
 print(f'Your input: {buffer}, its a type of "{type(buffer)}", and it has a length of {len(buffer)} characters.')
 
-#	try to convert this input to an intege, IF possible
+#	try to convert this input to an integer, IF possible
 buffer = int(buffer)
 print(f"after successfully converting your input ({buffer}) has now this type: {type(buffer)}")
 
