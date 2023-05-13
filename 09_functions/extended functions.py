@@ -112,3 +112,15 @@ def add(a: int, b = -10, c = 500):
 
 print(add(999))
 print(add(100,c=-147,b=158))
+
+print("--------------")
+
+#	--------------
+#	returning more than 1 object
+#	--------------
+def swag():
+	return list(), dict(), tuple(), "123", 42
+#end function
+
+collection=swag()
+print(collection)
