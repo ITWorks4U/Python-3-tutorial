@@ -65,7 +65,6 @@ print("---------------")
 #	third option to
 #	read a file:
 #	---------------
-#	third option to read a file:
 #	using with command => automatically closes the
 #	file stream after completing with your operations
 with open("lorem_ipsum.txt", "r") as source:
