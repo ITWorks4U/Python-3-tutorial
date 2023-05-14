@@ -56,9 +56,7 @@ def cleanUp(signal, frame):
 	#	any clean up operations here
 
 	#	-----------
-	#	resetting alarm, if
-	#	no signal has been triggered
-	#	before
+	#	resetting alarm
 	#
 	#	if an alarm is set and during
 	#	the time amount no signal has been
