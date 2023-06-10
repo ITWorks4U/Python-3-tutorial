@@ -2,7 +2,7 @@
 
 """
 	using optional arguments for
-	your function 
+	your function
 """
 
 #	--------------

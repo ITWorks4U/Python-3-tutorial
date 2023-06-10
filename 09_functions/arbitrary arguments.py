@@ -43,7 +43,7 @@ print("--------------")
 '''
 	Arbitrary keyword arguments are in use to
 	handle with a dictionary. These are often
-	shorened to *kwargs in Python documentations. 
+	shorened to *kwargs in Python documentations.
 '''
 def arbitraryKeywordArguments(**kwargs):
 	for key in kwargs.keys():

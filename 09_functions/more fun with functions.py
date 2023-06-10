@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-	have some other fun with functions :o) 
+	have some other fun with functions :o)
 """
 
 #	--------------

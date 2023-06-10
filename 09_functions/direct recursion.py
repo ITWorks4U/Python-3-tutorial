@@ -20,7 +20,7 @@
 
 	Recursion functions are often used
 	in math and writing less code
-	to receive the result very quickly. 
+	to receive the result very quickly.
 '''
 
 """
