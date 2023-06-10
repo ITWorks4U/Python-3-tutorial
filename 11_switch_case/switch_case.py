@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """
-	Unlike in the most programming / scripting languages
-	Python doesn't comes with a switch-case.
-
+	If you're using python in version up to 9, you're
+	unable to use a switch-case like in other programming
+	languages.
+	
 	We should use if, elif, elif, ..., else instead, however,
 	by using a combination of functions and dictionaries
 	we can simulate a switch-case.
