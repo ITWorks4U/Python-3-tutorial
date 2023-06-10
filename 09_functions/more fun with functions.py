@@ -20,7 +20,7 @@ for s in swag():
 #	...no comment...
 #	--------------
 def meme(a, b, c, d, e, f) -> None:
-	print(f'This function is going to {a}{b}{c}{d}{e}{f}.')
+	print(f'This function goes {a}{b}{c}{d}{e}{f}.')
 #end function
 
 b = 'b'
