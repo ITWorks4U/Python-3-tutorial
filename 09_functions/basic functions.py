@@ -5,7 +5,7 @@
 
 	Functions allows you to write
 	a code once and call it multiple
-	times.
+	times. 
 
 	Like conditions, loops, classes, ...
 	functions comes with a block indent

@@ -13,7 +13,7 @@
 
 	it's much more a >>Generator<<
 
-	Their usage might be a bit strange...
+	Their usage might be a bit strange... 
 """
 
 """
