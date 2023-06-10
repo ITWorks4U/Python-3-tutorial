@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-	If you're using python in version up to 9, you're
+	If you're using python in version up to 3.9, you're
 	unable to use a switch-case like in other programming
 	languages.
 	

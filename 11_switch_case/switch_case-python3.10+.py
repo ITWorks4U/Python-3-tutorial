@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-	Since you're using python in version 10 or higher,
+	Since you're using python in version 3.10 or higher,
 	you're also able to use a 'real' switch-case: match
 """
 
