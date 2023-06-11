@@ -17,7 +17,7 @@
 #	required to use the functions
 #	and classes
 import classes as cl
-import functions as fu
+import functions as func
 
 #	-----------
 #	"main()"
@@ -26,12 +26,12 @@ def main():
 	#	-----------
 	#	using functions
 	#	-----------
-	fu.Function()
-	fu.F()
+	func.Function()
+	func.F()
 
 	b = 'b'
 	r = 'r'
-	fu.Goes(b,r,r,r,r)
+	func.Goes(b,r,r,r,r)
 
 	#	-----------
 	#	using classes
@@ -40,7 +40,7 @@ def main():
 	print(f'{s.Display()}')
 
 	print(f'{cl.Food.Apple}')
-	fu.printFood(cl.Food.Banana)
+	func.printFood(cl.Food.Banana)
 
 	#	-----------
 	#	prints type of enumeration
