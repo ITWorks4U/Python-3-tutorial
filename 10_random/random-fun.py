@@ -76,27 +76,3 @@ for i in range(10):
 		#end case
 	#end match
 #end for
-
-#	fun fact: a string can also be handled
-#	like a list, but it's different to a list
-#
-#	more informations in the string chapter soon :o)
-#
-characterCollection = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwvxyz0123456789!"§$%&/()=?_:;-.,+*#`´µ<>|@~'
-lengths = (5,10,20,50,100)
-
-def createRandomPassword(length: int) -> None:
-	holder = list()
-
-	for _ in range(length):
-		holder.append(r.choice(characterCollection))
-	#end for
-
-	#	converting the list into a string
-	randomPassword = "".join(holder)
-	print(f'your random created password with a length of {len(randomPassword)} characters: {randomPassword}')
-#end for
-
-for l in lengths:
-	createRandomPassword(l)
-#end for
