@@ -4,28 +4,28 @@
 	How to use modules.
 
 	Modules (other python scripts) offers you
-	to access to functions, classes etc, which
-	are defined elsewhere.
+	to access to functions, classes, etc.
 
-	There're 3 different ways to use a module:
+	There're 4 different ways to use a module:
 	#1	import >module 0, module 1, ..., module n-1<
 	#2	import >module 0, ..., module n-1< as >alias<
 	#3	from >module n< import >part k< as >alias<, part p as >alias<, ... 
+	#4	from >module n< import *
 
 	Attention: By default, the python interpreter
 	looks in the current dictionary, where >>this<<
-	script lies, if the imported modules also lies
-	there.
+	module could be. If existing, it will be imported
+	instead a system module, which has the identical name.
 
-	If these are found there, these will be used instead,
-	thus if you've written your own string class and named
+	If you've written your own string class and named
 	that to "string.py", then the import below might fail,
 	if the required functions, classes, etc. to import
 	were not found. => #3
 """
 
 #	---------------
-#	1 (importing more than one module)
+#	1:	importing everything from a module
+#		it also allows to import multiple modules
 #	---------------
 import os, platform
 print(f"You're running this script on this location: {os.getcwd()}.")
@@ -34,7 +34,9 @@ print(f"Your system: {platform.system()}, release: {platform.release()}, version
 print("---------------")
 
 #	---------------
-#	2 (using random)
+#	2:	using an alias
+#	unlike to write randmom.random()
+#	you're able to write r.random()
 #	---------------
 import random as r
 pool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"§$%&/()=?_:;#'
@@ -51,8 +53,10 @@ for c in (1,2,4,8,16,32,64,128,256):
 print("---------------")
 
 #	---------------
-#	3 (using lowercase of the
-# 	alphabet from string class)
+#	3	importing sub classes, certain functions,
+#		or else by using from command
+#
+#		using lowercase of the alphabet from string class
 #	---------------
 from string import ascii_lowercase as al
 print(f'using al: length: {len(al)}, to upper: {al.upper()}, is decimal: {al.isdecimal()}')
@@ -60,13 +64,29 @@ print(f'using al: length: {len(al)}, to upper: {al.upper()}, is decimal: {al.isd
 print("---------------")
 
 #	---------------
-#	using customized
-#	modules
+#	4	importing everything like 1, but by using
+#		an asterisks symbol
 #	---------------
-from custom_module import Simple as si, AnotherClass as ac
+from string import *
 
-s = si()
-print(s.showContentType())
+#
+#	...have some fun here
+#
 
-a = ac()
-print(a)
+print("---------------")
+
+#	---------------
+#	bonus: using customized modules
+#	---------------
+import custom_module as cm
+
+s0 = cm.Simple()
+print(s0.showContentType())
+
+s1 = cm.Simple(123)
+print(s1.showContentType())
+
+cm.Meme('b', 'r', 'r', 'r', 'r', 'r')
+
+print(f'What is the meaning of life? {cm.answerOfEverything}')
+print(f'Whis number is the best? {cm.bestNumberOfAllTime} <=> {int(cm.bestNumberOfAllTime)}')
