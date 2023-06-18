@@ -24,8 +24,6 @@ except KeyboardInterrupt as k:
 	#	as an exception, where this
 	#	is an interruption
 	#
-	#	=> will be handled in part 16
-	#
 	#	k.args has no information for us
 	#	-----------
 	print(f"CTRL + C has been pressed: {k.args}")
