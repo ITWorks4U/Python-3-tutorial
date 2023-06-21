@@ -43,4 +43,7 @@ def suspicious():
 #	amount and type of arguments
 pdb.runcall(suspicious)
 
+#	if your function takes counter as argument
+# pdb.runcall(suspicious, 0)
+
 #	unlike to pdb.set_trace() no exception will be thrown by using 'quit'
