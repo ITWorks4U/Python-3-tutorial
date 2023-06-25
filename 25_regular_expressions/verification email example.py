@@ -4,6 +4,11 @@
 	Regular expressions are a well tool
 	to check a certain expression.
 
+	For more details, take a look to this video:
+	https://www.youtube.com/watch?v=vvFPWHHto00
+
+	(German commentary, English text)
+
 	Checking, if a given email-address may
 	be valid or not.
 """
