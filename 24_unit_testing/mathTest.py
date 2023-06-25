@@ -31,31 +31,31 @@ class BasicMath():
 		return a+b
 	#end method
 
-	def subtraction(self, arg1: int, arg2: int) -> int:
-		if not isinstance(arg1, int) or not isinstance(arg2, int):
+	def subtraction(self, a: int, b: int) -> int:
+		if not isinstance(a, int) or not isinstance(b, int):
 			raise MathException(self.__illegalArguments)
 		#end if
 
-		return arg1 - arg2
+		return a - b
 	#end function
 
-	def multiply(self, arg1: int, arg2: int) -> int:
-		if not isinstance(arg1, int) or not isinstance(arg2, int):
+	def multiply(self, a: int, b: int) -> int:
+		if not isinstance(a, int) or not isinstance(b, int):
 			raise MathException(self.__illegalArguments)
 		#end if
 
-		return arg1 * arg2
+		return a * b
 	#end function
 
-	def divide(self, arg1: int, arg2: int) -> int:
-		if not isinstance(arg1, int) or not isinstance(arg2, int):
+	def divide(self, a: int, b: int) -> int:
+		if not isinstance(a, int) or not isinstance(b, int):
 			raise MathException(self.__illegalArguments)
 		#end if
 
-		if arg2 == 0:
+		if b == 0:
 			raise MathException(self.__divideByZero)
 		#end if
 
-		return arg1 / arg2
+		return a / b
 	#end function
 #end class

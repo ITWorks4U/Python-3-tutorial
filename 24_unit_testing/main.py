@@ -14,8 +14,12 @@
 	.	:=	executed successfully
 	x	:=	expected a failure
 	u	:=	unexpected successes
-	S	:=	skipped that test
+	s	:=	skipped that test
 	F	:=	failed test
+
+	hint: every test must start with test as
+	prefix, otherwise this test will never
+	execute
 """
 
 #	gain access to unit testing
@@ -25,7 +29,7 @@ import unittest as ut
 import mathTest as m
 
 #	-------------
-#	Test cases.
+#	Test cases for math operations.
 #	-------------
 class TestingMath(ut.TestCase):
 	#	-------------
@@ -63,7 +67,7 @@ class TestingMath(ut.TestCase):
 		#	forced to handle this exception. It will be
 		#	handled automatically.
 		#	-------------
-		self.assertEqual(self.bm.add(3,4), 7, '3 + 4 = 7!')
+		self.assertEqual(self.bm.addition(3,4), 7, '3 + 4 = 7!')
 	#end method
 
 	#	-------------
@@ -75,7 +79,7 @@ class TestingMath(ut.TestCase):
 	#	-------------
 	@ut.expectedFailure
 	def testDivideByZero(self):
-		self.assertEqual(self.bm.div(15,0), 0, 'Wait a minute...!')
+		self.assertEqual(self.bm.divide(15,0), 0, 'Wait a minute...!')
 	#end method
 
 	#	-------------
@@ -86,16 +90,16 @@ class TestingMath(ut.TestCase):
 		bm = m.BasicMath()
 
 		with self.assertRaises(m.MathException):
-			bm.add('howdy', 'ho')
+			bm.addition('howdy', 'ho')
 		#end with
 	#end method
 
 	#	-------------
 	#	Skipping this test for a later purpose.
 	#	-------------
-	def skipTest1(self):
+	def testSkipTest1(self):
 		with self.skipTest("skipped at the moment"):
-			bm.add('3', 9)
+			bm.addition('3', 9)
 		#end with
 	#end method
 
@@ -103,8 +107,34 @@ class TestingMath(ut.TestCase):
 	#	Also possible to skip a test.
 	#	-------------
 	@ut.skip("demonstrating skipping")
-	def skipTest2(self):
+	def testSkipTest2(self):
 		self.fail("epic fail")
+	#end method
+#end class
+
+#	-------------
+#	Test cases for file operations.
+#	-------------
+from fileTesting import readFromFile
+
+"""
+	Using file operations instead and
+	try to figure out, if these test(s)
+	is/are successful or failed.
+"""
+class TestingFileOperations(ut.TestCase):
+	def setUp(self) -> None:
+		self.fileName = "test.txt"
+	#end set up
+
+	def tearDown(self) -> None:
+		del self.fileName
+	#end tear down
+
+	def testReadFileFails(self):
+		with self.assertRaises(FileNotFoundError):
+			readFromFile(self.fileName)
+		#end with
 	#end method
 #end class
 
