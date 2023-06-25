@@ -10,47 +10,50 @@
 #	custom exception class
 #	-------------
 class MathException(Exception):
+	#constructor
 	def __init__(self, errorMessage: str) -> None:
-		self.__errMsg = errorMessage
+		self.errMsg = errorMessage
 	#end constructor
-
-	def getErrorMessage(self) -> str:
-		return self.__errMsg
-	#end method
 #end class
 
+#	-------------
+#	custom math class
+#	-------------
 class BasicMath():
-	def add(self, a: int, b: int) -> int:
+	__illegalArguments = 'illegal argument usage; int is required'
+	__divideByZero = 'division by zero is not allowed'
+
+	def addition(self, a: int, b: int) -> int:
 		if not isinstance(a, int) or not isinstance(b, int):
-			raise MathException('illegal argument usage; int is required')
+			raise MathException(self.__illegalArguments)
 		#end if
 
 		return a+b
 	#end method
 
-	def sub(arg1: int, arg2: int) -> int:
+	def subtraction(self, arg1: int, arg2: int) -> int:
 		if not isinstance(arg1, int) or not isinstance(arg2, int):
-			raise MathException('one of the arguments is not decimal')
+			raise MathException(self.__illegalArguments)
 		#end if
 
 		return arg1 - arg2
 	#end function
 
-	def mul(arg1: int, arg2: int) -> int:
+	def multiply(self, arg1: int, arg2: int) -> int:
 		if not isinstance(arg1, int) or not isinstance(arg2, int):
-			raise MathException('one of the arguments is not decimal')
+			raise MathException(self.__illegalArguments)
 		#end if
 
 		return arg1 * arg2
 	#end function
 
-	def div(arg1: int, arg2: int) -> int:
+	def divide(self, arg1: int, arg2: int) -> int:
 		if not isinstance(arg1, int) or not isinstance(arg2, int):
-			raise MathException('one of the arguments is not decimal')
+			raise MathException(self.__illegalArguments)
 		#end if
 
 		if arg2 == 0:
-			raise MathException('division by zero is not allowed')
+			raise MathException(self.__divideByZero)
 		#end if
 
 		return arg1 / arg2
