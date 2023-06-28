@@ -32,10 +32,6 @@
 		-	empty words only (have a length of 0 characters)
 	
 	...
-	
-	When you're trying to use other objects, like numbers, collections,
-	or else, the regular expression check usually fails and must be
-	covered with an exception handling.
 
 	For more details, take a look to this video:
 	https://www.youtube.com/watch?v=vvFPWHHto00
@@ -43,25 +39,47 @@
 	(German commentary, English text)
 """
 
-#	importing regular expression module
+#	----------
+#	checking, if the expression is in hexadecimal form:
+#
+#	^(0x|0X)?([A-Fa-f0-9]+)(H|h)?$
+#		-	may start with 0x or 0X
+#		-	contains A-F, a-f or 0-9 at least once
+#		-	may end with h or H
+#
+#		will pass:
+#		0x1h
+#		0xFdaaH
+#		0xface
+#		Affe
+#	----------
+
 import re
 
-#	defining a filter, where each expression
-#	must satisfy this filter condition
-#
-#	the expression with any length (0,1,2,...)
-#	must have characters in a range of 0 to 9
-filter = "^(-|\+)?[0-9]+$"
+conditionHex = "^(0x|0X)?([A-Fa-f0-9]+)(H|h)?$"
+buffer = input("enter a hexadecimal expression any length: ")
 
-expressions = ('123', 'Is mayonnaise also an instrument?', 2390472397492984927429648236, '0', '-10', '+73', list(), 'Hello regular expression in python 3!')
+if re.match(conditionHex, buffer):
+	print(f'Your input is hexadecimal. Trying to convert it to decimal, octal and binary... Just for fun. :)')
 
-for e in expressions:
 	try:
-		if re.match(filter, e):
-			print(f'"{e}" is a number')
+		#	In python this preinitialization isn't necessary,
+		#	however, it may be a good guideline for your
+		#	processing.
+		newHex = ""
+
+		#	disposing h or H at the end, if existing, because it will
+		#	cause an error on converting
+		if buffer.endswith('H') or buffer.endswith('h'):
+			newHex = buffer[:-1]
 		else:
-			print(f'"{e}" is a not number')
+			newHex = buffer
 		#end if
-	except TypeError as te:
-		print(f'error for "{e}" detected: {te.args}')
-#end for
+		
+		print(f'decimal form: {int(newHex, 16)}, octal form: {oct(int(newHex, 16))}, binary form: {bin(int(newHex, 16))}')
+	except Exception as e:
+		print(f'error: {e.args}')
+	#end try
+else:
+	print('Sorry, but this is not a hexadecimal expression.')
+#end if
