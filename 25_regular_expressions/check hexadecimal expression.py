@@ -4,20 +4,6 @@
 	Regular expressions are a well tool
 	to check a certain expression.
 
-	Checking, if an expression is a number:
-
-	Typically, you're using int(expression)
-	to try to convert it into a number,
-	howver, it fails with an exception,
-	if the expression doesn't contain
-	numerical characters only.
-	=>	This could be handled with an exception handling.
-
-	Our you could use a regular expression,
-	which checks, if a certain expression
-	passes trough a defined filter or not.
-	=>	In that case no exception handling is necessary.
-
 	A regular expression can only be used on words!
 	Since a word with a length n characters (n = 0, 1, 2, ..., k-1)
 	is given, a regular expression can be used to define a filter
