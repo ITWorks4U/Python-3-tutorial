@@ -94,10 +94,19 @@ def fileTestThread() -> None:
 	try:
 		print("starting file operations with threading...")
 
-		#	the syntax for args is a bit weired, however, this works
-		#	in that way only
-		writeThread = Thread(target=f.writeToFile, args=(file, ))
-		readThread = Thread(target=f.readFromFile, args=(file, ))
+		#	the syntax for args is a bit weired, however, it requires
+		#	an argument, followed by a comma
+		#	a space behind the comma is unnecessary
+		writeThread = Thread(target=f.writeToFile, args=(file,))
+		readThread = Thread(target=f.readFromFile, args=(file,))
+
+		#	instead of using args, you can also use kwargs, which
+		#	represents a dictionary of string (key) and any (value):
+		#
+		#	attention: the key in kwargs must be a single expression only
+		#	and it must be the argument name, otherwise an error appears
+		writeThread = Thread(target=f.writeToFile, kwargs={'fileName' : file})
+		readThread = Thread(target=f.readFromFile, kwargs={'fileName' : file})
 
 		writeThread.start()
 		readThread.start()
@@ -106,6 +115,69 @@ def fileTestThread() -> None:
 
 		readThread.join()
 		writeThread.join()
+	except Exception as ex:
+		print(f"{ex.args}")
+	finally:
+		end = t.process_time()
+		print(f"elapsed time amount: {end-begin}s")
+	#end try-finally
+#end function
+
+#	----------
+#	using an indepented thread
+#	----------
+def fileTestThreadIndepented():
+	#	Unlike to the regular threads, which runs parallel
+	#	to the main thread, sometimes it's required to run
+	#	a thread, where the main thread has no need to wait
+	#	until the thread(s) is/are finished.
+	#
+	#	Since a thread is marked as a daemon thread, it runs
+	#	in the background. Similar to other programming languages
+	#	this thread has been detached.
+	#
+	#	Usually, once a thread has been finished it can't be collected
+	#	by the main thread. However, in python you can also to this without
+	#	any consequences by default.
+	#
+	#	Background threads are very often in use on a GUI,
+	#	to prevent to freeze the application.
+	file = "test.txt"
+	begin = t.process_time()
+
+	try:
+		print("starting file operations with indepented threads...")
+
+		#	with daemon = True (defaults to False) this thread runs as a
+		#	background service
+		writeThread = Thread(target=f.writeToFile, kwargs={'fileName' : file}, daemon=True)
+		readThread = Thread(target=f.readFromFile, kwargs={'fileName' : file}, daemon=True)
+
+		writeThread.start()
+		readThread.start()
+
+		print("-----------")
+
+		#	When we omit these instructions our application might be terminated
+		#	in less than 1ms, but the threads might still running!
+		#
+		#	One of the main advantages of daemon threads is that they can run in the background
+		#	without blocking the main program. This is useful for tasks that are not critical to
+		#	the functioning of the program, such as logging or monitoring.
+		#
+		#	Another advantage of daemon threads is that they can be used to perform periodic tasks,
+		#	such as cleaning up temporary files or sending heartbeat signals,
+		#	without the need for a separate scheduler.
+		#
+		#	However, there are also some disadvantages to using daemon threads:
+		#		-	since daemon threads are not critical to the functioning of the program,
+		#			they may be terminated abruptly if the main program exits before they
+		#			have completed their execution => our test.txt doesn't contain all lines
+		#
+		#		=>	this can lead to unexpected behavior and potential data loss
+
+		# readThread.join()
+		# writeThread.join()
 	except Exception as ex:
 		print(f"{ex.args}")
 	finally:
@@ -124,8 +196,8 @@ def fileTestMutex() -> None:
 	try:
 		print("starting file operations with threading...")
 
-		writeThread = Thread(target=m.writeToFile, args=(file, ))
-		readThread = Thread(target=m.readFromFile, args=(file, ))
+		writeThread = Thread(target=m.writeToFile, args=(file,))
+		readThread = Thread(target=m.readFromFile, args=(file,))
 
 		writeThread.start()
 		readThread.start()
@@ -155,5 +227,6 @@ if __name__ == '__main__':
 	# testThread()
 	# testMutex()
 	# fileTestThread()
+	# fileTestThreadIndepented()
 	# fileTestMutex()
 #end entry point
