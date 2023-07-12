@@ -43,7 +43,7 @@
 import re
 
 conditionHex = "^(0x|0X)?([A-Fa-f0-9]+)(H|h)?$"
-buffer = input("enter a hexadecimal expression any length: ")
+buffer = input("enter a hexadecimal expression of any length: ")
 
 if re.match(conditionHex, buffer):
 	print(f'Your input is hexadecimal. Trying to convert it to decimal, octal and binary... Just for fun. :)')
@@ -67,5 +67,5 @@ if re.match(conditionHex, buffer):
 		print(f'error: {e.args}')
 	#end try
 else:
-	print('Sorry, but this is not a hexadecimal expression.')
+	print(f'Sorry, but {buffer} is not a hexadecimal expression.')
 #end if

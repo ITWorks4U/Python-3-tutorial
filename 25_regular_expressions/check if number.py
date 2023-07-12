@@ -8,12 +8,12 @@
 
 	Typically, you're using int(expression)
 	to try to convert it into a number,
-	howver, it fails with an exception,
+	however, it fails with an exception,
 	if the expression doesn't contain
 	numerical characters only.
 	=>	This could be handled with an exception handling.
 
-	Our you could use a regular expression,
+	Or you could use a regular expression,
 	which checks, if a certain expression
 	passes trough a defined filter or not.
 	=>	In that case no exception handling is necessary.
