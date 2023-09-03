@@ -61,6 +61,15 @@ for _ in range(4):
 	createRandomColor(r.choice(randomNumberCollection))
 #end for
 
+#	defining collections and variables for the game, which
+#	must be able to modify inside of analyzeGuesses() function
+colorsDone = [False, False, False, False]
+colorsGuesses = [False, False, False, False]
+
+pointsForColorAndPosition = 0
+pointsForColorsOnly = 0
+alreadyGuessed = False
+
 #	Analyzing the guesses.
 #
 #	In combination with two loops we're comparing
@@ -71,18 +80,23 @@ for _ in range(4):
 #	first color might be on position 2, 3, and/or 4.
 #	Similar to the other colors.
 def analyzeGuesses() -> None:
+	global pointsForColorAndPosition
+	global pointsForColorsOnly
+	global alreadyGuessed
 
-	#	On every loop the settings for the sub collections
-	#	are going to reset, which might be a good reason
-	#	for a fourth version of our application. :o)
-	colorsDone = [False, False, False, False]
-	colorsGuesses = [False, False, False, False]
-	pointsForColorAndPosition = 0
-	pointsForColorsOnly = 0
-
+	#	step 1: check, if the system color on position i is equal to
+	#			the color from input on position j
 	for i in range(len(systemColors)):
 		for j in range(len(guessCollectionUser)):
-			if systemColors[i] == guessCollectionUser[j]:
+
+			#	also check, if this color has not already been
+			#	guessed before
+			onCheck = (
+				systemColors[i] == guessCollectionUser[j] and
+				not colorsDone[i] and not colorsGuesses[j]
+			)
+
+			if onCheck:
 				pointsForColorAndPosition += 1
 				colorsDone[i] = True
 				colorsGuesses[j] = True
@@ -90,14 +104,26 @@ def analyzeGuesses() -> None:
 		#end for
 	#end for
 
+	#	step 2:	check, which color might be on an another position instead
 	for i in range(len(systemColors)):
 		if not colorsDone[i]:
 			for j in range(len(guessCollectionUser)):
+
+				#	To avoid to handle the color on the same
+				#	position (again). Since we know, that the color j on position i is identical,
+				#	we will skip this step.
 				if i == j:
 					continue
 				#end if
 
-				if not colorsGuesses[j] and guessCollectionUser[j] == systemColors[i]:
+				#	we also check, if the current guessed color in combination with the
+				#	next 
+				onCheck = (
+					not colorsGuesses[j] and guessCollectionUser[j] == systemColors[i] and
+					not colorsDone[i] and not colorsGuesses[j]
+				)
+
+				if onCheck:
 					pointsForColorsOnly += 1
 					colorsDone[i] = True
 					colorsGuesses[j] = True
@@ -106,6 +132,13 @@ def analyzeGuesses() -> None:
 		#end if
 	#end for
 
+	#	if we also have reached the maximum points for all (correct) colors,
+	#	this flag will be set to true
+	if pointsForColorAndPosition == 4 or pointsForColorsOnly == 4:
+		alreadyGuessed = True
+	#end if
+
+	#	optional: printing the current state to the console
 	print(f"correct color and position: {pointsForColorAndPosition}")
 	print(f"correct colors only: {pointsForColorsOnly}")
 #end function
@@ -123,6 +156,11 @@ for i in range(5):
 	guessCollectionUser = input("enter four colors: ").split()
 	print('Analyzing...')
 	analyzeGuesses()
+
+	#	"if alreadyGuessed:" works, too
+	if alreadyGuessed == True:
+		break
+	#end if
 #end for
 
 #	finally, print the current combination
