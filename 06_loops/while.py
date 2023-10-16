@@ -20,6 +20,9 @@
 			a call of itself
 		-	mostly used to calculate very quickly, but be careful
 		-	if you don't mind, then your application crashes
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:08:44
 """
 
 a = 0

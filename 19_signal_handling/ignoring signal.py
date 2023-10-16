@@ -27,6 +27,9 @@
 	- terminating the process
 	- killing the process
 	- set an alarm to terminate the application automatically
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:11:12
 """
 
 #	-----------

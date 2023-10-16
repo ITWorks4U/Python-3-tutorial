@@ -11,6 +11,9 @@
 
 	In this example, this python script
 	offers classes only.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 from enum import Enum as E
 

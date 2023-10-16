@@ -12,6 +12,9 @@
 	mutex := mutual exclusion
 
 	Doesn't comes with exception handling!
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:56:05
 """
 
 #	----------

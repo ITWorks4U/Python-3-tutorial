@@ -8,6 +8,9 @@
 	Don't be confused with * and you're
 	also knows C/C++. These aren't pointers
 	in python.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 #	--------------

@@ -7,6 +7,9 @@
 	It can easily being used to iterate
 	trough the collection, adding new elements,
 	removing elements, etc.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:30:24
 """
 
 #	define a dictionary

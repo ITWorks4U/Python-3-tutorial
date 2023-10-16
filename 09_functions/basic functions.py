@@ -17,11 +17,15 @@
 	- None 				<=>	no return value (similar to void in C, C++, Java, C#, ...)
 	- certain type		<=>	type to work with => no error occurs, if the return value is unused
 	- multiple types	<=>	you're also welcome to return multiple objects at the same time
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 #	--------------
 #	before a function can be called,
-#	it must be defined before
+#	it must be defined first, otherwise it's
+#	an error on runtime (similar to C++)
 #	--------------
 #aSimpleFunction()
 

@@ -4,6 +4,9 @@
 	Measuring time for any process(es)
 	helps you to take a look on the
 	efficiency of your code.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:39:53
 """
 
 #	-----------

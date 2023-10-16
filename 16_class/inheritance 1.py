@@ -3,6 +3,9 @@
 """
 	Inheritance allows you to extend
 	a class with new functionalities.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 """
 #	basic class
 class Simple:

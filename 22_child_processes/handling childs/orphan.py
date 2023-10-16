@@ -4,6 +4,9 @@
 	When the main process ends too early,
 	then the child process becomes orphan
 	and the init process collect that.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:45:30
 """
 
 import os, time

@@ -30,6 +30,9 @@
 		pip install <package> (python 2 only)
 
 	in that case: pip(3)(.exe) install getpass
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:38:28
 """
 
 import getpass as secret

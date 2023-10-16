@@ -4,6 +4,9 @@
 	Lambda expressions are anonymous functions,
 	which can be called at any time everywhere
 	without defining a function.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 result = lambda r: r+r

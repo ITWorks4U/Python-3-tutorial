@@ -19,6 +19,9 @@
 
 	This example demonstrates an endless loop
 	and can be handled only by pressing CTRL + C.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:11:12
 """
 
 #	-----------

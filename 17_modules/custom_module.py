@@ -2,6 +2,9 @@
 
 """
 	using custom modules in python
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:48:52
 """
 
 class Simple:

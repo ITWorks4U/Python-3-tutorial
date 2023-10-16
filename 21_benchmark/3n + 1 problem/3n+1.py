@@ -6,6 +6,9 @@
 	if n is even => n/2
 	if n is odd  => 3*n + 1
 	if n is 1    => terminate
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:39:53
 """
 
 #	-----------

@@ -19,6 +19,9 @@
 	A constructor and also destructor doesn't
 	comes with a return value and like in other
 	OOP languages these are typeless.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 '''
 
 class Simple:

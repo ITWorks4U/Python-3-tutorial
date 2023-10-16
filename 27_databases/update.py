@@ -30,6 +30,9 @@
 		(UNIX/Linux / possible macOS only)
 		for windows:
 			pip.exe list and then you must look (:
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:44:12
 """
 
 import getpass as gp

@@ -16,6 +16,9 @@
 	continue - continue your process
 	jump <line-nbr> - go to a specific line number
 	quit - terminate the debugging process
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:30:22
 """
 
 #	importing the module for debugging

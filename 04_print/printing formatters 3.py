@@ -15,6 +15,9 @@
 		-	flush	:=	whether to forcibly flush the stream
 
 	returns nothing
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:38:15
 """
 
 stringVal = "This is a simple text."
@@ -40,3 +43,19 @@ print("C", "C++", "Python", "C#", "Java", "...", sep=" nonsense separator ")
 with open('outsourced.txt', encoding="utf-8", mode='w') as f:
 	print("C", "C++", "Python", "C#", "Java", "...", file=f, end='')
 #end with
+
+#	------------------
+#	flushing the output
+#	------------------
+from time import sleep
+
+for i in range(10):
+	'''
+		if flush=True, then the previous output
+		will be replaced with the new output
+
+		\b tells the system to jump one position back
+	'''
+	print(f'{i}', end='\b', flush=True)
+	sleep(0.5)
+#end for

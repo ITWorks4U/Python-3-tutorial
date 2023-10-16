@@ -21,6 +21,9 @@
 		(any editor): view -> display whitespaces (or similar expression)
 
 	Now, have fun with Python 3!
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:01:47
 '''
 
 #	simple print command

@@ -2,6 +2,9 @@
 
 """
 	have some other fun with functions :o)
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 #	--------------

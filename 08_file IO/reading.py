@@ -33,6 +33,9 @@
 	overloaded functions, too
 
 	see also: https://www.programiz.com/python-programming/methods/built-in/open
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:51:01
 """
 #	---------------
 #	first option to read a file:

@@ -10,6 +10,9 @@
 
 	often used on low level programming, however,
 	in that case it's much better to use C programming (:
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:10:06
 """
 
 print("--- bitwise operations ---")

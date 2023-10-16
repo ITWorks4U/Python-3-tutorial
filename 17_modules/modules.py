@@ -21,6 +21,9 @@
 	that to "string.py", then the import below might fail,
 	if the required functions, classes, etc. to import
 	were not found. => #3
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:48:52
 """
 
 #	---------------

@@ -6,6 +6,9 @@
 
 	By default, some packages, like psutil, GPUtil aren't installed on your system,
 	which needs to be installed by pip.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		06:04:34
 """
 
 import platform as p

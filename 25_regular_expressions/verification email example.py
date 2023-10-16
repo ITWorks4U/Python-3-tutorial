@@ -36,7 +36,8 @@ filter = "^[a-z]{1,10}@(gmail|gmx|hotmail)\.(com|info|de)$"
 		-	looking anywhere in the buffer,
 			if the filter can be spotted there
 	
-	returns a Match[str] object, which 
+	returns a Match[str] object, which can be used for
+	a simple condition check
 """
 buffer = input('verify your email-address: ')
 if re.match(filter, buffer):

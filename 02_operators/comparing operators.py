@@ -5,6 +5,9 @@
 	or more values each other
 
 	returns true or false only
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:10:06
 """
 
 a = 10

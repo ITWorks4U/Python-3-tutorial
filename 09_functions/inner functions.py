@@ -14,6 +14,9 @@
 
 	A factorial if n means: n * n-1 * n-2 * ... * 1
 	for n = 1, 2, 3, ...
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 def factorial(n):

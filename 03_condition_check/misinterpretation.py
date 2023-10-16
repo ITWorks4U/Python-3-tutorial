@@ -18,6 +18,9 @@ b = 20
 
 						a & b:
 							00000000 (0)
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:30:24
 """
 print("these aren't typical condition checks...")
 

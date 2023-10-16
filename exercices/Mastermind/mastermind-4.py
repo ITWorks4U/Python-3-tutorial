@@ -12,6 +12,9 @@ import signal as s
 		-	handling signal
 		-	using multiline strings
 		-	fixing logic error on color analyzing
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	not shown in the video
 '''
 
 class MasterMind():

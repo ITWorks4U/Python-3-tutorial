@@ -14,6 +14,9 @@
 	it's much more a >>Generator<<
 
 	Their usage might be a bit strange...
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 """

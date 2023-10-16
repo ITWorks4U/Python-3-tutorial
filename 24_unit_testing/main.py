@@ -4,7 +4,7 @@
 	Unit testing allows you to test
 	specific scenarios for your project.
 
-	In math.py we're using simple
+	In mathTest.py we're using simple
 	arithmetic operations, thus
 	we can assume an expected result
 	and also specific errors, like
@@ -20,6 +20,9 @@
 	hint: every test must start with test as
 	prefix, otherwise this test will never
 	execute
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:20:24
 """
 
 #	gain access to unit testing

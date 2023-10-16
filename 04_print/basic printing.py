@@ -7,6 +7,9 @@
 	This function also comes with a
 	set of additional arguments to work
 	with that.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:38:15
 """
 
 #	------------------

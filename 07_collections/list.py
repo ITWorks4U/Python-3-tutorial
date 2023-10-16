@@ -10,6 +10,9 @@
 	Don't be confused from other languages,
 	because there a [] is an array, whereas
 	a list has a specific definition.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:30:24
 """
 
 #	create a list with n elements

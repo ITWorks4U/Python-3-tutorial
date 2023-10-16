@@ -2,6 +2,9 @@
 
 """
 	File operations for unit testing.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:20:24
 """
 
 #	100,000,000

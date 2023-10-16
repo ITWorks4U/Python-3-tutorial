@@ -13,6 +13,9 @@
 
 	In combination with debugging a memory leak can easily be
 	detected.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:57:06
 """
 
 fp = None

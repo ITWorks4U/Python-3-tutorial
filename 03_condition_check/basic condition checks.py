@@ -7,6 +7,9 @@
 	everytime a condition check returns true
 	a certain block of code(s) is able
 	to execute
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:30:24
 """
 
 #	let's have two values
@@ -19,7 +22,8 @@ b = 20
 		  must have an indentation (white space OR tabs only)
 
 		- do NOT merge your python code with both intendentions,
-		  it's a syntax error
+		  it's a syntax error (it seems since Python 3.10+ it's now allowed,
+		  but not tested)
 
 		- be careful, which code is a part of a condition check (also
 		  for a loop, a function or a class); means: every code, which has
@@ -30,6 +34,7 @@ b = 20
 		  at least a code; it's a syntax error, if this field is empty;
 		  even a commentary as a dummy holder is also not valid;
 		  if an implementation is in further use, then use the keyword: pass
+		  or use a muliline commentary block
 
 		- if you're not sure about the indentations in your code, then you
 		  can activate the white spaces, depending on the editor you're using

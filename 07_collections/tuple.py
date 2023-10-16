@@ -7,6 +7,9 @@
 	In contrast to a list or set,
 	no elements can be added or removed
 	after creation.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:30:24
 """
 
 #	define a tuple with fixed elements

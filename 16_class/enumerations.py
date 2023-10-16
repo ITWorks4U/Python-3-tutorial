@@ -6,6 +6,9 @@
 	An "enumeration" is "just" a class,
 	which inhertits Enum class from
 	enum module.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 """
 
 #	required module to load

@@ -7,6 +7,9 @@
 	Strings are immuatble, so it's impossible to
 	modify a single character. In Python strings
 	can mostly be handled like lists.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:47:07
 """
 
 #	-------------------

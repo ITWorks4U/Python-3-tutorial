@@ -8,6 +8,8 @@
 	We should use if, elif, elif, ..., else instead, however,
 	by using a combination of functions and dictionaries
 	we can simulate a switch-case.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
 """
 
 #	----------------

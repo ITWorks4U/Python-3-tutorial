@@ -6,6 +6,9 @@
 
 	In combination with debugging a memory leak can easily be
 	detected.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:57:06
 """
 import tracemalloc
 
@@ -17,7 +20,7 @@ tracemalloc.start(100)
 def readAFile():
 	global fp
 	print('opening file...')
-	fp = open('python_a-z.py')
+	fp = open('using tracemalloc.py')
 
 	raise Exception('oops')
 

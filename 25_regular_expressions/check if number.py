@@ -41,6 +41,9 @@
 	https://www.youtube.com/watch?v=vvFPWHHto00
 
 	(German commentary, English text)
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:30:47
 """
 
 #	importing regular expression module

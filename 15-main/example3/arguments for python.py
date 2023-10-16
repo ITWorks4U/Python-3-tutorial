@@ -14,6 +14,9 @@
 	You could do that by separating each argument, which
 	is a high amount of wasted time, or you could use
 	regular expressions or else.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 
 #	contains functions and objects
@@ -25,7 +28,7 @@ if __name__ == '__main__':
 	#	argv := argument vector => contains each argument...
 	print(f'arguments passed: {len(sys.argv)}')
 
-	#...including your own python script
+	#...including your own python script (similar to C/C++)
 	for i,a in enumerate(sys.argv):
 		print(f'argument {i}: {a}')
 	#end for

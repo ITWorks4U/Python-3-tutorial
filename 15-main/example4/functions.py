@@ -14,6 +14,9 @@ from classes import Food
 
 	In this example, this python script
 	offers functions only.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 #	-----------
 #	simple functions

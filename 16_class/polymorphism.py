@@ -8,6 +8,9 @@
 	In contrast to other OOP languages,
 	Python also supports polymorphism,
 	however, this is a bit weired...
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 """
 
 class GeometricObject():

@@ -7,6 +7,9 @@
 	C++ might work on the same way, but it's also not tested.
 
 	Before you start make sure you've built your library first.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		06:16:35
 """
 
 from ctypes import c_double, c_int, CDLL

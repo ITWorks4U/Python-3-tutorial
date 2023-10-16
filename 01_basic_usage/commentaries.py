@@ -28,3 +28,8 @@
 #"""
 
 #	commentaries aren't in use for the interpreter
+
+'''
+video tutorial:	https://youtu.be/AK44C_uZ9u4
+timestamp:		00:01:47
+'''

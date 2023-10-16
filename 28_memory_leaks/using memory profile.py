@@ -15,6 +15,9 @@
 
 	In combination with debugging a memory leak can easily be
 	detected.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:57:06
 """
 
 from memory_profiler import profile
@@ -24,7 +27,7 @@ fp = None
 def readAFile():
 	global fp
 	print('opening file...')
-	fp = open('python_a-z.py')
+	fp = open('using memory profile.py')
 
 	raise Exception('oops')
 

@@ -15,6 +15,9 @@
 	beginning of the class, these can also be
 	defined somewhere in a method, but causes
 	a worse reading.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 """
 
 #	definition of a class

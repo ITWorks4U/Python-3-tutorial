@@ -7,6 +7,9 @@
 	Let's say, the main1 is your real
 	main, but main2 also contains a
 	main, which one of these will win?
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 
 #	importing main2, which also contains a main

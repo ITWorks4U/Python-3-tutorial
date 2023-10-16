@@ -8,6 +8,9 @@
 	-	file I/O with threads
 	-	file I/O with mutex
 	----------
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:56:05
 """
 
 import time as t

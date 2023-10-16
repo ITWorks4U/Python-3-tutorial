@@ -12,6 +12,9 @@
 	In this example, this python script
 	has the "main()" and accesses to
 	the other modules (python scripts).
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 
 #	required to use the functions

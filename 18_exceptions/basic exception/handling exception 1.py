@@ -8,6 +8,9 @@
 	If unhandled, the application crashes
 	with a full stack trace, where this
 	exception has been triggered.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:55:37
 """
 
 """

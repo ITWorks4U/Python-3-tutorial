@@ -3,6 +3,9 @@
 """
 	custom module for
 	exception handling
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:55:37
 """
 
 class Simple:

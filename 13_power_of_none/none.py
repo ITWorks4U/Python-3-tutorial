@@ -10,6 +10,9 @@
 	None isn't the same like false, 0 or an
 	empty string. It's an unique data type to
 	define an undefined state of an object.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:40:05
 """
 
 #	-------------

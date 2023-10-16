@@ -16,6 +16,9 @@
 			first color on the first position is correct or not,
 			which makes the game harder for us
 		-	runs the application once only
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:22:40
 '''
 
 #	"random" colors

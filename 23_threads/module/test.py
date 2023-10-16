@@ -4,6 +4,9 @@
 	test for
 	no threading, threading
 	and for mutex threading
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:56:05
 """
 
 #	1,000,000,000

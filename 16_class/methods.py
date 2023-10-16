@@ -11,6 +11,9 @@
 	least one argument -> self, otherwise
 	it's a syntax error. >>self<< is not
 	required, you can use any expression
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 '''
 
 class Simple:

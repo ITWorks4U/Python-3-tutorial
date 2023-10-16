@@ -6,6 +6,9 @@
 
 	To trigger a custom exception, this
 	must be thrown. In Python it's raised.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:55:37
 """
 
 #	-----------

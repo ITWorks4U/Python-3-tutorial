@@ -6,6 +6,9 @@
 	Mostly you don't realize that, but sometimes
 	this is really important to know when to modify
 	a global object in an own section.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:36:35
 """
 
 ######################

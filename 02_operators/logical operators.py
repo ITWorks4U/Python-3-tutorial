@@ -4,6 +4,9 @@
 	locical operators are in use to compare
 	two or more values and their result
 	returns true or false
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:10:06
 """
 
 #	values to use

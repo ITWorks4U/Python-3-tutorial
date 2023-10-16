@@ -11,6 +11,9 @@
 
 	However, the access is not identical
 	in contrast to other OOP languages.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 '''
 
 class Point:

@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+'''
+video tutorial:	https://youtu.be/AK44C_uZ9u4
+timestamp:		03:55:37
+'''
+
 #	-----------
 #	handling module errors
 #	-----------

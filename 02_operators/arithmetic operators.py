@@ -4,6 +4,9 @@
 	arithmetical operators are the basic
 	math operations like addition,
 	subtraction, etc.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:10:06
 """
 
 #	values to use

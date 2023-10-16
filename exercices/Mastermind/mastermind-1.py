@@ -11,6 +11,9 @@
 			second color with second input etc.
 		-	count the points at the end of the application
 		-	runs the application once only
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:01:28
 '''
 
 #	"random" colors

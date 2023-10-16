@@ -21,6 +21,9 @@ import random as r
 		-	adding a loop to have 5 guesses
 		-	finally, the correct collection will be printed at the
 			end of the application
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	not shown in the video
 '''
 
 #	holds four random colors

@@ -10,6 +10,9 @@
 
 	However, with a main, you can control
 	your progam sequence much better.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:57:37
 """
 
 #	Since you're using a main function, this is NOT

@@ -17,6 +17,9 @@
 	To write something into a file, use:
 	write(__s: str) -> int <=> returns the number of written bytes
 	writelines(__lines: Iterable[str], /) -> None
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:51:01
 """
 #	---------------
 #	default way for writing

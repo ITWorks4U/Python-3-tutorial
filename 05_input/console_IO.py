@@ -8,6 +8,9 @@
 	it will cause an error on runtime if you're
 	trying to use a different usage, e. g. interpreting
 	this input as a number, even it's not a number.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:58:59
 """
 
 #	-------------------

@@ -20,6 +20,9 @@
 		for more informations, take a look there:
 		-	https://docs.python.org/3/tutorial/inputoutput.html
 		-	https://www.geeksforgeeks.org/string-formatting-in-python-using/
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:38:15
 """
 
 stringVal = "This is a simple text."

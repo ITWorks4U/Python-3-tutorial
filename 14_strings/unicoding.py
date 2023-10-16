@@ -35,6 +35,9 @@
 
 	or that:
 	https://stackoverflow.com/questions/1728376/get-a-list-of-all-the-encodings-python-can-encode-to
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:47:07
 """
 
 """

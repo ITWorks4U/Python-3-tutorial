@@ -21,6 +21,9 @@
 	Recursion functions are often used
 	in math and writing less code
 	to receive the result very quickly.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 '''
 
 """

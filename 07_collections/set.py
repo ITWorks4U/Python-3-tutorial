@@ -8,6 +8,9 @@
 	removing elements, however, it has
 	some limitations in contrast to
 	a list.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		01:30:24
 """
 
 #	define a set

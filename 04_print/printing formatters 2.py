@@ -4,6 +4,9 @@
 	Unlike using C-style formatters
 	with their disadvantages, use
 	a smarter way instead.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		00:38:15
 """
 
 stringVal = "This is a simple text."

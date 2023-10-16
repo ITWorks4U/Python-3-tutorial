@@ -28,6 +28,9 @@
 	Unlike to the regular thread using, where's no guarantee,
 	which thread is now running, with the semaphore the threads
 	are running in the expected order.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:56:05
 """
 
 from time import sleep

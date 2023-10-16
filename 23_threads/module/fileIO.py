@@ -10,6 +10,9 @@
 	up to 900 MB!
 
 	Doesn't comes with exception handling!
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		04:56:05
 """
 
 #	100,000,000

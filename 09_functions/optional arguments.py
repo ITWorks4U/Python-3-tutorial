@@ -3,6 +3,9 @@
 """
 	using optional arguments for
 	your function
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:02:16
 """
 
 #	--------------

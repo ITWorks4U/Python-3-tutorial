@@ -13,6 +13,9 @@
 	then it might crash on runtime. In that case
 	this file was named with "random-fun.py"
 	instead of "random.py".
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:28:52
 '''
 
 #	required module to work with

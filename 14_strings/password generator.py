@@ -3,6 +3,9 @@
 """
 	Let python create a random generated password
 	for you.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		02:47:07
 """
 
 import random as r

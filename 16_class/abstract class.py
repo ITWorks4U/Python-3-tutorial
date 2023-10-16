@@ -11,6 +11,9 @@
 	instanciated. It's just an interface, like a
 	blueprint, where each sub class must implement
 	each abstract method.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:06:53
 """
 
 #	abc = abstract base class

@@ -9,6 +9,9 @@
 
 	this example demonstrates an endless loop
 	and can be handled only by pressing CTRL+C
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		03:55:37
 """
 
 try:

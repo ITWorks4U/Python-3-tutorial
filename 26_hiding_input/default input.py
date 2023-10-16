@@ -8,6 +8,9 @@
 	usually, we're using input(promt: str) -> str function,
 	to read from the keyboard, however, this is
 	really unsecure, of course.
+
+	video tutorial:	https://youtu.be/AK44C_uZ9u4
+	timestamp:		05:38:28
 """
 
 userName = input('enter username: ')
