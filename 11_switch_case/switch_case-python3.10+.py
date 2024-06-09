@@ -30,3 +30,23 @@ def switchCase(number):
 print("Give me the result of 0: {}".format(switchCase(0)))
 print("Give me the result of 4: {}".format(switchCase(4)))
 print("Give me the result of 10: {}".format(switchCase(10)))
+
+#	----------------
+#	using multiple cases
+#	----------------
+def switchCase2(number):
+	match number:
+		case 0 | 1:
+			return "0 or 1 returned here"
+		case 2:
+			return "2 only"
+		#...
+
+		#end cases
+	#end match
+#end function
+
+print(f'again: {switchCase2(0)}')
+print(f'again: {switchCase2(1)}')
+print(f'again: {switchCase2(2)}')
+print(f'again: {switchCase2(9)}')
