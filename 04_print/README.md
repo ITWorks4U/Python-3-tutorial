@@ -14,4 +14,4 @@ Of course you can. Ther'e different ways to do this:
 - use the Python-syntax (see: printing formatters 3)
 
 ###	attention
-EVERYTING will be "a word" when it's printed to the console
+__EVERYTING__ will be "a word" when it's printed to the console
