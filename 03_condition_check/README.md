@@ -1,7 +1,7 @@
 #	Condition checks
 
 Condition checks allows you to compare one, two or more values to each other.
-Everytime a condition check returns true a certain block of code(s) is able to execute
+Everytime a condition check returns true a certain block of code(s) is able to execute.
 
 ##	(very) important things
 
