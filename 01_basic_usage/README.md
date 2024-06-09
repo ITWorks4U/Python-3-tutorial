@@ -68,7 +68,7 @@ Basicly, you don't need to use additional packages, except for some sub projects
 -	use pip[3/.exe] install [package name]
 -	similar to the python interpreter it's also required which pip you're using
 
-for Windows:
+for Windows: 
 >>	pip.exe list	<<	(listing all the packages, which are installed on your system)
 >>	pip.exe install [package]	<< (installing the package, IF correct written AND ALSO available)
 
