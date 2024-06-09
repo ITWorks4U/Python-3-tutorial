@@ -43,20 +43,18 @@ At this moment it's 3.12.
 
 In Windows you don't need to know any difference between the python interpreter versions.
 You can just use:
->>	python.exe [any file(s) you want to run]	<<
+```python.exe [any file(s) you want to run]```
 
 However, outside of Windows, e. g. Linux, macOS, ... it's important to know which interpreter shall
 be used.
 
 When you use:
-
->>	python [any file(s) you want to run]	<<
+```python [any file(s) you want to run]```
 
 then it's the python 2(!!) interpreter by default
 
 For Python 3 you have to use:
-
->>	python3 [any file(s) you want to run]	<<
+```python3 [any file(s) you want to run]```
 
 ##	Do I need additional packages?
 

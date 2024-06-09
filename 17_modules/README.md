@@ -14,4 +14,4 @@
 
 -	by default, the python interpreter looks in the current dictionary, where >>this<< module could be
 -	if existing, it will be imported instead a system module, which has the identical name
--	if you've written your own string class and named that to "string.py", then the import below might fail, if the required functions, classes, etc. to import were not found
+-	if you've written your own string class and named that to "string.py", then the import below might fail, if the required functions, classes, etc. to import were not found 

@@ -11,4 +11,4 @@
 
 ###	useful examples
 -	to easy access to an object
--	in combination with threads to let control sequences from outside
+-	in combination with threads to let control sequences from outside 

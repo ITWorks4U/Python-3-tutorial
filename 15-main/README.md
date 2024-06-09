@@ -16,4 +16,4 @@ if __name__ == '__main__':
 ```
 
 > __name__:
-represents the file name, which shall be the current "main", when it's in use by the python interpreter
+represents the file name, which shall be the current "main", when it's in use by the python interpreter 

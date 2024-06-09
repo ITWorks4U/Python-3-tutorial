@@ -5,11 +5,11 @@ Everytime a condition check returns true a certain block of code(s) is able to e
 
 ##	(very) important things
 
-- condition checks (also for loops, functions and classes) must have an indentation (white space OR tabs only
-- do NOT merge your python code with both intendentions, it's a syntax error (it seems since Python 3.10+ it's now allowed, but not tested)
+- condition checks (also for loops, functions and classes) must have an indentation (white space OR tabs only)
+- do __NOT__ merge your python code with both intendentions, it's a syntax error (it seems since Python 3.10+ it's now allowed, but not tested)
 - be careful, which code is a part of a condition check (also for a loop, a function or a class); means: every code, which has the same indentation like the last code above, is automatically a part of this condition, loop, etc.
 - every special block of code (condition, loop, etc.) must have at least a code; it's a syntax error, if this field is empty; even a commentary as a dummy holder is also not valid; if an implementation is in further use, then use the keyword: pass or use a muliline commentary bloc
-- if you're not sure about the indentations in your code, then you can activate the white spaces, depending on the editor you're usin
+- if you're not sure about the indentations in your code, then you can activate the white spaces, depending on the editor you're using
 - hint: it's not required, but for a better design and reading, mark your indentation at the end with an commentary, like: #end if, #end for or else
 
 ##	How to use condition checks wrong:

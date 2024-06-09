@@ -12,6 +12,6 @@ use a combination of a function and a dictionary
 
 use match (other languages: switch) followed by case (other languages: case)
 unlike to other languages:
--	there's no >>break<< in your code
+-	there's no __break__ in your code
 -	by comparing multiple cases for one purpose, use a single "or" => |
 -	the default case is just: >>case _<<

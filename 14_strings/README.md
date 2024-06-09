@@ -5,5 +5,5 @@ strings are immutable => once defined it's not allowed to change it's content on
 
 ##	A word can easy be read in every situation, right?
 
-No. It depends on the used format. Usually, you're using ASCII (basic alphabet in small and capital letters, numbers between 0-9 and "only" a few of "special characters").
+No. It depends on the used format. Usually, you're using __ASCII__ (basic alphabet in small and capital letters, numbers between 0-9 and "only" a few of "special characters").
 Imagine, you want to use emojis, then you have to use an another unicode format. The same condition exists for other real languages, like chinese, russian, ...

@@ -13,8 +13,8 @@ You should know the difference between:
 
 It sounds odd, but it's easy to use the wrong operators.
 In example: "Check, if two varables (a,b) are the same."
-correct:	a == b
-wrong:		a is b, a & b, a and b (might have different usage or results) 
+__correct__:	a == b
+__wrong__:		a is b, a & b, a and b (might have a different usage or different results) 
 
 Since these operations are correct in syntax, their logic differs!
 

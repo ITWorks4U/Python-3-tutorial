@@ -11,27 +11,34 @@ in both cases just use open() function
 ###	writing to a file
 
 example:
+```
 fc = open(fileName, mode='w')
 
 ''' do operations here '''
 
 fc.close()
+```
 
 ###	reading from a file
 
 example:
+```
 fc = open(fileName, mode='r')
 
 '''	do operations here	'''
 
 fc.close()
+```
 
 ###	How to use it smarter?
 
 -	in contrast to the default way, where YOU have to close the resource, you can also let do this from the system automatically
 
+```
 with open(fileName, mode=...) as fc
 	'''	your operations here '''
+
+```
 
 -	by using >>with<< a temporary resource is in use
 -	when the block has been left, the resource is also automatically released

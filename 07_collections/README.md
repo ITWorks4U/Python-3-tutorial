@@ -23,3 +23,4 @@ c = set()
 d = dict()
 
 It's much better to understand what kind of code is supposed for.
+By the way, you _may_ also use ```list = list()```, but this is hard to read and understand.
