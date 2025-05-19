@@ -8,7 +8,7 @@
 
 	Perhaps you tested something and forgot to undo your last change.
 	Well, python may gives you a warning, and usually nothing happens
-	on runtime, however, this has also a nasty undefined behavior.
+	on runtime, however, this can also have a nasty undefined behavior.
 '''
 
 class Test():
@@ -16,6 +16,7 @@ class Test():
 		self.__data: int = data
 	#end constructor
 
+	#NOTE:	Don't do this.
 	@property
 	def Data(self) -> int('123'):
 		return self.__data

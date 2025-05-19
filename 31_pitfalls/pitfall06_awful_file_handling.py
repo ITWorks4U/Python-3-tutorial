@@ -2,6 +2,11 @@
 #	bad exception handling
 ###
 
+import sys
+
+#NOTE: sys.argv[0] returns your current file
+file = sys.argv[0]
+
 '''
 	Awful. Honestly...
 
@@ -9,7 +14,7 @@
 	you mistyped the name, the file is corrupted, you don't have
 	access rights, ...
 '''
-file = open('pitfall06.py')
+file = open(file)
 
 try:
 	for line in file:
@@ -32,7 +37,7 @@ finally:
 	in the finally block.
 '''
 try:
-	file = open('pitfall06.py')
+	file = open(file)
 
 	for line in file:
 		print(line)
@@ -53,7 +58,7 @@ finally:
 	Finally, the finally block may now be obsolete.
 '''
 try:
-	with open('pitfall06.py') as file:
+	with open(file) as file:
 		for line in file:
 			print(line)
 		#end for
@@ -63,4 +68,3 @@ except Exception as e:
 finally:
 	pass
 #end try
-

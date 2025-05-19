@@ -16,7 +16,7 @@
 		-	os.path.exists(file_or_path)
 		-	pathlib.Path.exists(file_or_path)
 
-	Looks similar, almost identical, but the behavior of both functions differs.
+	Looks similar, almost identical, but the behavior of both functions are different.
 
 	os.path.exists():
 		returns True, if the path or file exists
@@ -24,7 +24,7 @@
 		
 		The function also returns False on any OSError without any consequences.
 
-	Path.exists():
+	pathlib.Path.exists():
 		similar to os.path.exists()
 
 		However, on any OSError this could re-raise the OSError, if a sub function
@@ -32,12 +32,15 @@
 '''
 
 import os
+import sys
 
-fd = None
-fileNames = ['pitfall14.py', '/home', 'C:\\', '¯\\_(ツ)_/¯']
+#NOTE:	sys.argv[0] returns your own file
+fileNames = [sys.argv[0], '/home', 'C:\\', '¯\\_(ツ)_/¯']
 
 for fileName in fileNames:
 	if os.path.exists(fileName):
+		print(f'current file / path exists: {fileName}')
+
 		try:
 			with open(fileName) as fd:
 				#do something...

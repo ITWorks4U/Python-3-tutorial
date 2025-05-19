@@ -45,6 +45,9 @@ def handler(signal, frame) -> None:
 #end function
 
 def main() -> None:
+	#	register some possibly incoming signals during runtime
+	#	SIGINT	=>	CTRL + C
+	#	SIGTERM	=>	terminate the application in command line (without kill -9)
 	sig.signal(sig.SIGINT, handler)
 	sig.signal(sig.SIGTERM, handler)
 
